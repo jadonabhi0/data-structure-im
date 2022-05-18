@@ -23,6 +23,7 @@ public class LuckyNumber {
         }
         return list;
     }
+    // added this extraa
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         LinkedList<Integer> list = new LinkedList<>();
