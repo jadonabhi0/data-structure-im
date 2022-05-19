@@ -15,6 +15,7 @@ public class MatrixDiagonal {
                 }
             }
         }
+
         if (n%2!=0){
             temp = mat[n/2][n/2];
             total = sum1+sum2-temp;
