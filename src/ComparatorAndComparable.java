@@ -96,7 +96,7 @@ public class ComparatorAndComparable {
 //        Collections.sort(list,(o1, o2) -> o1.name.compareTo(o2.name));
 
 //        Collections.sort(list,Comparator.comparing(student::getName));
-        Collections.sort(list,Comparator.comparing(student::getName).thenComparing(student::getAge).reversed());
+        Collections.sort(list,Comparator.comparing(student::getName).thenComparing(student::getAge));
 
 
        list.forEach(System.out::println);

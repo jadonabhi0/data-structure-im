@@ -15,14 +15,9 @@ public class Execution {
         tree.insert(root,3);
         tree.insert(root,9);
 
-//        tree.inOrder(root);
-//        System.out.println();
-//        tree.preOrder(root);
-//        System.out.println();
-//        tree.postOrder(root);
-//        System.out.println(tree.isBalance(root));
-            tree.levelOrderTraversal(root);
-        System.out.println(tree.topView(root));
+
+        tree.levelOrderTraversal(root);
+
 
     }
 }

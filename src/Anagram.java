@@ -19,16 +19,10 @@ public class Anagram {
     }
 
 
-
     public static void main(String[] args) {
         String a = "cat";
         String b = "act";
         System.out.println(isAnagram(a, b));
-
-
-
-
-
 
     }
 }
