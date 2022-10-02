@@ -1,36 +1,45 @@
 package SlindingWindow;
 
+import java.util.Arrays;
+import java.util.stream.Collectors;
+
 public class SubArraySumEqualK {
 
-    public static void helper(int[] array, int k){
+    // example of variable size sliding window
+    public static void subArraySum(int[] array, int sum){
+        int currSum = array[0];
         int start = 0;
-        int sum = array[0];
-        for (int end = 1 ; end <= array.length ; end++){
 
-            // compression of window
-            while (sum > k && start < end -1){
-                sum -= array[start++];
+        for(int end = 1 ; end <= array.length ; end++){
+            // compressing the window
+            while(start < end && currSum > sum){
+                currSum -= array[start++];
             }
-            // printing the sub array
-            if (sum == k){
-                for (int i = start ; i < end ; i++){
+
+            // printing the sub-array
+            if(sum == currSum){
+                for(int i = start ; i < end ; i++){
                     System.out.print(array[i]+" ");
                 }
                 System.out.println();
             }
 
-            // expansion of window
+            // expanding the window
             if (end < array.length){
-                sum += array[end];
+                currSum += array[end];
             }
 
-        }
 
+
+        }
     }
 
 
+
+
     public static void main(String[] args) {
-        int[] array = {1,2,3,4,5,6,7,8,3,3,3,4,2};
-        helper(array,6);
+        int[] array = {1, 4, 20, 3, 10, 5, 25, 8, 23, 10, 20, 15, 15, 3};
+//        System.out.println(Arrays.stream(array, 1, 3).boxed().collect(Collectors.toList()));
+//        subArraySum(array, 33);
     }
 }
