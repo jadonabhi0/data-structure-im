@@ -6,6 +6,8 @@ public class ZiczacTraversal {
 
         for(int j = 0 ; j < matrix[0].length ; j++){
             if (j % 2 == 0){
+                
+                
 
                 for (int i = 0; i < matrix.length ; i++){
 
