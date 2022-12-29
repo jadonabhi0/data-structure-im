@@ -18,6 +18,8 @@ public class Graph {
         map.get(v2).put(v1,cost);
     }
 
+    
+    
     public void display(){
         for (int key : map.keySet()){
             System.out.println(key+ " -> "+map.get(key));
