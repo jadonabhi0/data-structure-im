@@ -529,43 +529,6 @@ public class MySinglyLinkedList implements SinglyLinkedListADT {
     }
 
 
-//    public void prin(){
-//        Node s = reorderList(head);
-//        while (s!=null){
-//            System.out.print(s.data+" ");
-//            s=s.next;
-//        }
-//    }
-
-//    private Node last(Node head){
-//        Node prev = null;
-//        while(head!=null){
-//            prev = head;
-//            head = head.next;
-//        }
-//        return prev;
-//    }
-//    public Node reorderList(Node head) {
-//        Node dummy = head;
-//        Node finall = new Node(0);
-//        Node res = null;
-//
-//        int count = 1;
-//        while(dummy!=null){
-//            count++;
-//            dummy = dummy.next;
-//        }
-//
-//        count = count/2;
-//        while(count-->0){
-//            finall.next = head;
-//            res = head;
-//            head = head.next;
-//            finall.next = last(res);
-//            finall = finall.next;
-//        }
-//        return finall;
-//    }
 
 
 
