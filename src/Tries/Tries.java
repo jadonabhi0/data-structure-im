@@ -14,8 +14,6 @@ public class Tries {
             isTreminal = false;
         }
 
-
-
     }
     private Node root;
 
