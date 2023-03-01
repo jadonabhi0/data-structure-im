@@ -12,6 +12,7 @@ public class MergeSort {
         divide(array, mid+1, j);
         merge(array, i, mid, j);
     }
+    
 
     private void merge(int[] array, int start, int mid, int end){
         int [] merged = new int[end-start+1];
