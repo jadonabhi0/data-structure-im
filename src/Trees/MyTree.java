@@ -20,8 +20,6 @@ public class MyTree {
         public Node(){}
     }
 
-
-
     private Node root;
 
 
