@@ -23,6 +23,7 @@ public class MyTree {
     private Node root;
 
 
+
     public MyTree(){
         this.root = null;
     }
