@@ -72,6 +72,9 @@ public class Heap {
         this.list.set(j,ith);
     }
 
+    
+    
+    
 
     public static void main(String[] args) {
 
