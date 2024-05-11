@@ -10,7 +10,6 @@ public class LED7Segment {
         }
         System.out.println(total);
     }
-
     public static void main(String[] args) {
         countToggle("0189");
     }
