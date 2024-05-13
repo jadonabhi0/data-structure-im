@@ -8,7 +8,6 @@ public class LED7Segment {
             int a = Integer.parseInt(String.valueOf(ch));
             total += array[a];
         }
-
         
         System.out.println(total);
     }
