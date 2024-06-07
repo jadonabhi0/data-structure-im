@@ -12,6 +12,7 @@ public class QueueUsingTwoStack<E>{
         return s1.size() == 0 && s2.size() == 0;
     }
 
+    
     public void offer(E data){
         s1.push(data);
     }
