@@ -15,8 +15,6 @@ public class Map_Client {
 
 //        System.out.println(map.getSize());
 
-
-
     }
 
 }
